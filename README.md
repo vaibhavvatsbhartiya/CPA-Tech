@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Financial Dashboard - Next.js + ShadCN UI 🚀
 
-## Getting Started
+## Overview
+A modern **Financial Management Dashboard** built with **Next.js** and **ShadCN UI**. It includes **secure authentication, transaction tracking, budget insights, and user management**, featuring a clean and responsive design.
 
-First, run the development server:
+## Features
+- **Landing Page** with feature highlights and call-to-action.
+- **Dashboard** for financial tracking and analytics.
+- **Transactions Management** for viewing, filtering, and adding expenses.
+- **User Management** (Admin) for role-based access.
+- **Settings Page** for profile updates and preferences.
+- **Real-time Charts & Tables** for financial insights.
 
-```bash
+## UI Components Used (ShadCN)
+### **Global Layout**
+- `sidebar` - Navigation menu.
+- `navbar` - Top bar with user profile & notifications.
+- `footer` - Bottom section with links.
+- `switch` - Theme toggle (Dark/Light mode).
+
+### **Landing Page**
+- `hero section` - Introduction & CTA.
+- `carousel` - Showcasing dashboard features.
+- `card` - Key feature highlights.
+- `accordion` - FAQs section.
+- `badge` - Display benefits (e.g., "Secure", "Real-time").
+- `button` - Signup/Login actions.
+- `sheet/drawer` - Mobile-friendly menu.
+
+### **Dashboard & Pages**
+- `card` - Financial metrics (balance, income, expenses).
+- `chart` - Visual representation of transactions.
+- `progress` - Budget tracking.
+- `table` - List transactions.
+- `pagination` - Handle multiple pages of transactions.
+- `tabs` - Switch views (Income, Expenses, Overview).
+- `form` - Adding transactions & user management.
+- `calendar` - Select transaction dates.
+- `alert-dialog` - Confirmations (e.g., delete transaction).
+- `sonner` - Notifications.
+- `skeleton` - Loading placeholders.
+---
+
+## Dashboard Pages & UI Components
+### **Home / Overview Page**
+- `card` - Key financial metrics (total balance, income, expenses).
+- `chart` - Income vs. Expenses, Spending Trends.
+- `progress` - Budget tracking.
+- `table` - Recent transactions summary.
+
+### **Transactions Page**
+- `table` - Display all transactions with sorting & filtering.
+- `pagination` - Manage multiple pages of transactions.
+- `badge` - Status indicators (Pending, Completed, Failed).
+- `tabs` - Switch between Income, Expenses, Transfers.
+- `form` - Add/Edit transactions.
+- `alert-dialog` - Confirm delete transaction.
+
+### **Add Expense / Income Page**
+- `form` - Add a new financial entry.
+- `calendar` - Select transaction date.
+- `select` - Choose category (Food, Rent, Salary, etc.).
+- `badge` - Assign labels.
+- `alert-dialog` - Confirmation before saving.
+
+### **User Management (Admin Only)**
+- `table` - Display users and roles.
+- `avatar` - User profile images.
+- `form` - Add/Edit user details.
+- `alert-dialog` - Confirm user deletion.
+- `switch` - Activate/Deactivate users.
+
+### **Settings Page**
+- `tabs` - Switch between Profile, Security, Preferences.
+- `form` - Update user details.
+- `switch` - Enable/Disable features.
+- `accordion` - FAQs or help section.
+
+### **Notifications / Alerts**
+- `sonner` - Notification popups.
+- `alert-dialog` - Critical action confirmations.
+- `progress` - Show pending action status.
+
+## Installation
+```sh
+# Clone the repo
+git clone https://github.com/vaibhavvatsbhartiya/CPA-Tech.git
+cd CPA-Tech
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
+- **Frontend:** Next.js, ShadCN UI
+- **Backend:** Node.js, Express (optional for API)
+- **Database:** MongoDB / PostgreSQL (optional)
+- **Authentication:** JWT 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## License
+MIT
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
