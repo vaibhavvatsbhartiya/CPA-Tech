@@ -27,24 +27,34 @@ export default function Page() {
               <BreadcrumbList>
                 <BreadcrumbItem className="hidden md:block">
                   <BreadcrumbLink href="#">
-                    Building Your Application
+                    CPA Tech Platform
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="hidden md:block" />
                 <BreadcrumbItem>
-                  <BreadcrumbPage>Data Fetching</BreadcrumbPage>
+                  <BreadcrumbPage>Dashboard | Welcome Page</BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
           </div>
         </header>
-        <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
-          <div className="grid auto-rows-min gap-4 md:grid-cols-3">
-            <div className="aspect-video rounded-xl bg-muted/50" />
-            <div className="aspect-video rounded-xl bg-muted/50" />
-            <div className="aspect-video rounded-xl bg-muted/50" />
+        <div className="flex flex-1 flex-col items-center justify-center p-8 text-center  h-screen overflow-hidden">
+          <h2 className="text-3xl font-bold text-gray-200">Hello, User!</h2>
+          <p className="text-lg text-gray-400 mt-2">Manage your finances with ease and efficiency.</p>
+          <div className="grid gap-6 mt-6 md:grid-cols-3">
+            <div className="p-6 rounded-xl shadow-lg bg-blue-100">
+              <h3 className="text-xl text-gray-900 font-semibold">Track Transactions</h3>
+              <p className="text-gray-700">View and manage your expenses and income.</p>
+            </div>
+            <div className="p-6 rounded-xl shadow-lg bg-green-100">
+              <h3 className="text-xl text-gray-900 font-semibold">Generate Reports</h3>
+              <p className="text-gray-700">Analyze your financial data with insightful reports.</p>
+            </div>
+            <div className="p-6 rounded-xl shadow-lg bg-yellow-100">
+              <h3 className="text-xl text-gray-900 font-semibold">Stay Notified</h3>
+              <p className="text-gray-700">Get alerts on important financial updates.</p>
+            </div>
           </div>
-          <div className="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min" />
         </div>
       </SidebarInset>
     </SidebarProvider>
