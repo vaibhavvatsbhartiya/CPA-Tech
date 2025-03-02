@@ -4,9 +4,9 @@ import { Progress } from "@/components/ui/progress"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Separator } from "@/components/ui/separator"
 import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
-import { ChartContainer as Chart } from "@/components/ui/chart"
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb"
 import { Button } from "@/components/ui/button"
+import { BarChartComponent } from "@/components/dashboard-ui/bar-chart-multiple"
 
 export default function Page() {
   return (
@@ -62,17 +62,8 @@ export default function Page() {
           </div>
 
           <div className="grid gap-6 mt-6 md:grid-cols-2">
-            <Card className="bg-gray-950 text-gray-200">
-              <CardHeader>
-                <CardTitle>Income vs. Expenses</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <Chart config={{}}>
-                  <div>Loading Chart...</div>
-                </Chart>
-              </CardContent>
-            </Card>
-            <Card className="bg-gray-950 text-gray-200">
+           <BarChartComponent/>
+            <Card className=" text-gray-200">
               <CardHeader>
                 <CardTitle>Budget Progress</CardTitle>
               </CardHeader>
